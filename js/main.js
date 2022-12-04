@@ -1,29 +1,30 @@
-window.onload = () => {
+window.onload = async () => {
     "use strict";
     if("serviceWorker" in navigator){
         navigator.serviceWorker.register("./sw.js");
     }
+    await APICons();
 };
 
-let api = "https://handsome-spacesuit-bass.cyclic.app/listar-json";
-let url = `https://handsome-spacesuit-bass.cyclic.app/listar-json/${api}`;
-const main = document.querySelector('main');
+let url = `https://handsome-spacesuit-bass.cyclic.app/listar-json`;
+const main = document.querySelector("main");
 
-async function APICons(){
+async function APICons() {
     const res = await fetch(url);
     const data = await res.json();
-    main.innerHTML = data.articles.map(createArticle).join('\n');
+    main.innerHTML = data.map(createArticle).join("\n");
 }
-function createArticle(article){
+function createArticle(article) {
     return `
-      <div class="article">
-      <a href="${article.id}" target="_blank">
-         <img src="${article.imagem}"/>
-         <h2>${article.descri}</h2>
-         <p>${article.preco}</p>
-       </a>
-   </div>
-    `
+        <div class="meio">
+        <div class="article">
+        <h2 class="nome">${article.nome}</h2>
+           <img src="${article.imagem}" width="280px" height="200px" class="img-article"/>
+           <p class="center-descri">${article.descri}</p>
+           <h3> R$ ${article.preco}</h3>
+         </div>
+     </div>
+     `;
 }
 
 let posicaoInicial;//variavel para capturar a posicao
@@ -60,6 +61,10 @@ const erro = (error) => {//callback de error (falha para captura de localizacao)
 capturarLocalizacao.addEventListener('click', () => {
     navigator.geolocation.getCurrentPosition(sucesso, erro);
 
-    map.src = "http://maps.google.com/maps?q="+ posicaoInicial.coords.latitude+"," + posicaoInicial.coords.longitude +"&z=16&output=embed"
+    map.src = 
+    "http://maps.google.com/maps?q="+ 
+    posicaoInicial.coords.latitude+"," + 
+    posicaoInicial.coords.longitude +
+    "&z=16&output=embed";
 
 });

@@ -26,8 +26,8 @@ body{
     }
     
     .audio{
-        margin-top: 18px;
-        margin-left: 18px;
+        margin-top: 30px;
+        margin-left: 32px;
         width: 200px;
     }
     main{
@@ -58,12 +58,11 @@ body{
     
     .container-localização {
         box-sizing: border-box;
-        max-width: 100%;
         width: 100%;
         padding: 1em;
         background-color: rgb(64, 93, 119);
         text-align: center;
-        margin-top: 40%;
+        margin-top: 3%;
         height: 580px;
     }
     
@@ -72,7 +71,6 @@ body{
         color: rgb(241, 241, 245);
         font-size: 2em;
     }
-    
     .titulo2{
         color: rgb(240, 235, 235);
     }
@@ -117,8 +115,43 @@ body{
         width: 60%;
         border-radius: 5px;
     }
-    
-    .menu-produtos{
-        background-color: green;
-        color: white
+
+    .meio {
+        display: flex;
+        margin-top: -2%;
+      }
+    .article{
+        background-image: linear-gradient(#263752, #213f6e, #1f53a8);
+        width: 100%;
+        border-radius: 12px;
+        border: 2px solid rgb(248, 248, 248);
+        text-align: center;
+        padding: 20px;
+        color: #E5DADA;
+        text-decoration: none;
+        transition: 2s;
+        margin-top: 3%;
+}
+    .nome {
+    color: azure;
+    text-decoration: none;
+}
+    p {
+        color: azure;
+        text-decoration: none;
+        justify-content: center;
+}
+
+    .center-descri{
+     width: 95%;
+     text-align: center;
+     justify-content: center;
+}
+    h3{
+     color: #E5DADA;
+     text-decoration: none;
     }
+    .article:hover {
+        transform: scale(0.9);
+        transition: 2s;
+}
