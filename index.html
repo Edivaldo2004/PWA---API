@@ -1,68 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="utf-8" />
-        <title>Cheap Product</title>
-        <link rel="apple-touch-icon" href="images/pwa-icon-256.png" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="manifest" href="/manifest.json" />
-        <!--viewport para designers responsivos (mobo), content é a configuração-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="white" />
-        <script src="js/main.js" defer></script>
-    </head>
-    <body>
-        <div class="container">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cheap Product</title>
+    <link rel="apple-touch-icon" href="images/pwa-icon-256.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="/manifest.json" />
+    <!--viewport para designers responsivos (mobo), content é a configuração-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="white" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-title">
+          <h1>Olá, seja bem Vindo a <span>Cheap Product</span></h1>
+        </div>
+      </header>
+      <audio src="audio/audio.mp3" controls autoplay class="audio"></audio>
 
-            <header>
-    
-              <div class="header-title">
-                
-              <h1>Olá, seja bem Vindo a <span>Cheap Product</span></h1>
-              </div>
-            </header>
-              <audio src="audio/audio.mp3" controls autoplay class="audio"></audio>
-    
-            <main>
-    
-            <div class="menu-produtos">   
-                </div>
-            </div>
-            </div>
-            <div class="menu-produtos3">
-            </div>
-          </main>
+      <main>
+        <div class="menu-produtos"></div>
+
+        <div class="menu-produtos3"></div>
+      </main>
+    </div>
+
+    <section class="container-localização">
+      <header class="cabecalho">
+        <fieldset><h1 class="titulo">Veja sua Localização</h1></fieldset>
+      </header>
+
+      <h3 class="titulo2">Sua Localização é:</h3>
+
+      <div class="mapouter">
+        <iframe
+          id="mapa"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="http://maps.google.com/maps?q=25.3076008,51.4803216&z=16&output=embed"
+        >
+        </iframe>
+      </div>
+
+      <div class="conteudo">
+        <div class="conteudoLocalizacao">
+          <button class="botao" id="localizacao">
+            Capturar Localização (Clique 2X)
+          </button>
         </div>
-    
-        <section class="container-localização">
-          <header class="cabecalho">
-    
-            <center>
-            <h1 class="titulo">  <fieldset> Veja sua Localização</h1>
-           </fieldset>
-          </center>
-    
-          </header>
-        </div>
-    
-          <h3 class="titulo2">Sua Localização é:</h3>
-    
-          <div class="mapouter">
-    
-          <iframe id="mapa" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
-          src="http://maps.google.com/maps?q=25.3076008,51.4803216&z=16&output=embed">
-    
-            </iframe>
-         </div>
-    
-          <div class="conteudo">  
-            <div class="conteudoLocalizacao">
-            <div>
-              <button class="botao" id="localizacao">Capturar Localização (Clique 2X)</button>
-            </div>
-          </div>
-     </iframe>
-        </section>
-      </label>
-      </body>
-    </html>
+      </div>
+    </section>
+  </body>
+</html>
