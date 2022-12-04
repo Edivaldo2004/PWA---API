@@ -24,7 +24,9 @@ body{
     span{
         color: red;
     }
-    
+    u{
+        color: red;
+    }
     .audio{
         margin-top: 30px;
         margin-left: 32px;
@@ -154,4 +156,82 @@ body{
     .article:hover {
         transform: scale(0.9);
         transition: 2s;
+}
+
+/*Contato*/
+
+ul {
+    position: relative;
+    display: flex;
+}
+
+ul li{
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+ul li a .fa-brands{
+    font-size: 6em;
+    color: #222
+}
+
+ul li::before{
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 6em;
+    height: 80px;
+    overflow: hidden;
+}
+
+ul li:nth-child(1)::before{
+    content: "\f16d";
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%,
+    #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 4px solid #dc2743;
+}
+
+ul li:nth-child(2)::before{
+    content: "\f232";
+    color: #25D366;
+    border-bottom: 4px solid #25D366;
+}
+
+ul li:nth-child(3)::before{
+    content: "\f099";
+    color: #1DA1F2;
+    border-bottom: 4px solid #1DA1F2;  
+}
+
+ul li:hover::before{
+    height: 100%;
+}
+
+.rodape-display{
+    display: flex;
+    gap: 12px
+}
+.rodape{
+    position: fixed;
+    bottom: 0;
+    margin-top: 100px;
+    background-color: #0071ce;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 48px;
+    left: -1px;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
 }
