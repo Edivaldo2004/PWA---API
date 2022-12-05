@@ -75,6 +75,7 @@ body{
     }
     .titulo2{
         color: rgb(240, 235, 235);
+        margin-top: -5%;
     }
     .conteudo{
         margin: 1.2em 0;
@@ -106,9 +107,8 @@ body{
         width: 50%;
     }
     .botao{
-        background-color: rgba(69, 71, 163, 0.3);
-        box-shadow: 5px 5px 5px rgba(153, 154, 225, 0.3);
-        border: none;
+        background-color: rgb(31, 31, 102);
+        box-shadow: 5px 5px 5px rgba(16, 20, 226, 0.3);
         color: white;
         padding: 15px 32px;
         text-decoration: none;
@@ -116,11 +116,12 @@ body{
         font-size: 16px;
         width: 60%;
         border-radius: 5px;
+        border: 2px solid rgb(7, 94, 255);
     }
 
     .meio {
         display: flex;
-        margin-top: -2%;
+        margin-top: -5%;
       }
     .article{
         background-image: linear-gradient(#263752, #213f6e, #1f53a8);
@@ -132,7 +133,7 @@ body{
         color: #E5DADA;
         text-decoration: none;
         transition: 2s;
-        margin-top: 3%;
+        margin-top: 8%;
 }
     .nome {
     color: azure;
