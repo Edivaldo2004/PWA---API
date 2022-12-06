@@ -6,4 +6,18 @@
    .article{
     margin-top: 16%;
    }
+   .container-localização {
+     width: 320px;
+   }
+   .circle-big{
+      display: none;
+  }
+  
+  .circle-inner{
+   display: none;
+  }
+  
+  .circle-inner-inner{
+      display: none;
+  }
 }
