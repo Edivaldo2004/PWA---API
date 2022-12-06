@@ -4,13 +4,17 @@
     display: none;
    } 
    .article{
-    margin-top: 16%;
+    margin-top: 25%;
    }
    .container-localização {
      width: 320px;
    }
-   .circle-big{
+   .circle{
       display: none;
+  }
+  
+  .circle-small{
+   display: none;
   }
   
   .circle-inner{
@@ -18,6 +22,9 @@
   }
   
   .circle-inner-inner{
-      display: none;
+     display: none;
+  }
+  .circle-big{
+   display: none;
   }
 }
